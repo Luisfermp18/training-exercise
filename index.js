@@ -7,7 +7,11 @@ const {
     reverseStringBuiltFunction,
     reverseStringDecrementing,
     reverseStringRecursively
-} = require('./exercise/reverse-string')
+} = require('./exercise/reverse-string');
+
+// const {
+//     getMeetingHours
+// } = require('./exercise/calendar-meetings');
 
 
 
@@ -31,3 +35,23 @@ console.log(`Reverse String using Built-In Function: Hello --> ${reverseStringBu
 console.log(`Reverse String using Decrementing Loop: Hello --> ${reverseStringDecrementing("hello")}`);
 console.log(`Reverse String using Recursively: Hello --> ${reverseStringRecursively("hello")}`);
 console.log('======================================================================');
+
+
+
+// console.log('======================================================================');
+// console.log('===========================Calendar Meeting===========================');
+// const calendarA = [
+//     ['9:00', '10:30'],
+//     ['12:00', '13:00'],
+//     ['16:00', '18:00']
+// ];
+// const dailyBoundsA = ['9:00', '20:00'];
+// const calendarB = [
+//     ['10:00', '11:30'],
+//     ['12:30', '14:30'],
+//     ['16:00', '17:00']
+// ];
+// const dailyBoundsB = ['10:00', '18:30'];
+// const duration = 30;
+// console.log(`Reverse String using Built-In Function: Hello --> ${JSON.stringify(getMeetingHours(calendarA, calendarB, dailyBoundsA, dailyBoundsB, duration))}`);
+// console.log('======================================================================');

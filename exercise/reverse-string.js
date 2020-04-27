@@ -6,7 +6,7 @@
  */
 module.exports.reverseStringRecursively = (str) => {
     //O(1)
-    if(str === "") {
+    if (str === "") {
         return "";
     }
     //O(n)
@@ -20,16 +20,16 @@ module.exports.reverseStringRecursively = (str) => {
  */
 module.exports.reverseStringDecrementing = (str) => {
     //O(1)
-    if(str === "") {
+    if (str === "") {
         return "";
-    } 
+    }
 
     let newStr = "";
 
     //O(n)
     for (let i = str.length - 1; i >= 0; i--) {
         newStr += str[i];
-        
+
     }
 
     return newStr;
@@ -41,9 +41,9 @@ module.exports.reverseStringDecrementing = (str) => {
  */
 module.exports.reverseStringBuiltFunction = (str) => {
     //O(1)
-    if(str === "") {
+    if (str === "") {
         return "";
-    } 
+    }
     //O(n)
     return str.split("").reverse().join("");
 }
