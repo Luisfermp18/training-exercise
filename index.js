@@ -9,10 +9,11 @@ const {
     reverseStringRecursively
 } = require('./exercise/reverse-string');
 
-// const {
-//     getMeetingHours
-// } = require('./exercise/calendar-meetings');
-
+const {
+    bruteForcePairSearch,
+    binarySearchPairFind,
+    searchByPairing
+} = require('./exercise/finding-pairs-numbers');
 
 
 console.log('======================================================================');
@@ -38,20 +39,25 @@ console.log('===================================================================
 
 
 
-// console.log('======================================================================');
-// console.log('===========================Calendar Meeting===========================');
-// const calendarA = [
-//     ['9:00', '10:30'],
-//     ['12:00', '13:00'],
-//     ['16:00', '18:00']
-// ];
-// const dailyBoundsA = ['9:00', '20:00'];
-// const calendarB = [
-//     ['10:00', '11:30'],
-//     ['12:30', '14:30'],
-//     ['16:00', '17:00']
-// ];
-// const dailyBoundsB = ['10:00', '18:30'];
-// const duration = 30;
-// console.log(`Reverse String using Built-In Function: Hello --> ${JSON.stringify(getMeetingHours(calendarA, calendarB, dailyBoundsA, dailyBoundsB, duration))}`);
-// console.log('======================================================================');
+console.log('======================================================================');
+console.log('========================Finding Pairs numbers Methods========================');
+const inputA = [1,2,3,9];
+const sum = 8;
+const inputB = [1,2,4,4];
+const inputC = [-1,2,3,9];
+
+console.log('==========================Brute Force Region==========================');
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputA)}, sum: ${sum}--> ${bruteForcePairSearch(inputA, sum)}`);
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${bruteForcePairSearch(inputB, sum)}`);
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${bruteForcePairSearch(inputC, sum)}`);
+console.log('======================================================================');
+console.log('==========================Binary Search Region==========================');
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputA)}, sum: ${sum}--> ${binarySearchPairFind(inputA, sum)}`);
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${binarySearchPairFind(inputB, sum)}`);
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${binarySearchPairFind(inputC, sum)}`);
+console.log('======================================================================');
+console.log('==========================Pair Search Region==========================');
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputA)}, sum: ${sum}--> ${searchByPairing(inputA, sum)}`);
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${searchByPairing(inputB, sum)}`);
+console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${searchByPairing(inputC, sum)}`);
+console.log('======================================================================');
