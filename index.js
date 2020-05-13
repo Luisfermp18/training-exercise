@@ -15,6 +15,10 @@ const {
     searchByPairing
 } = require('./exercise/finding-pairs-numbers');
 
+const {
+    getMostFrequentlyUsedWords
+} = require('./exercise/most-frequent-words');
+
 
 console.log('======================================================================');
 console.log('=======================K-most Frequent Elements=======================');
@@ -60,4 +64,23 @@ console.log('==========================Pair Search Region=======================
 console.log(`Brute force find pair method with: input: ${JSON.stringify(inputA)}, sum: ${sum}--> ${searchByPairing(inputA, sum)}`);
 console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${searchByPairing(inputB, sum)}`);
 console.log(`Brute force find pair method with: input: ${JSON.stringify(inputB)}, sum: ${sum}--> ${searchByPairing(inputC, sum)}`);
+console.log('======================================================================');
+
+
+console.log('======================================================================');
+console.log('======================================================================');
+console.log('======================Most Frequently Used Words======================');
+const stringA = "Rose is a flower red rose are flower";
+const excludedA = ['is', 'are', 'a'];
+
+console.log(`[input: ${stringA} / exclusions: ${JSON.stringify(excludedA)}] Words finally I => `,
+    JSON.stringify(getMostFrequentlyUsedWords(stringA, excludedA)));
+
+const stringB = "Jack and Jill went to the market to buy bread and cheese. Cheese is Jack's and Jill's favorite food";
+const excludedB = ['and', 'he', 'the', 'to', 'is'];
+
+console.log(`[input: ${stringB} / exclusions: ${JSON.stringify(excludedB)}] Words finally II => `,
+    JSON.stringify(getMostFrequentlyUsedWords(stringB, excludedB)));
+
+console.log('======================================================================');
 console.log('======================================================================');
